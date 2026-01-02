@@ -9,49 +9,92 @@
       background-color: #000;
       color: #fff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 60px 20px;
+      padding: 60px 30px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
     }
     h1 {
       color: #007acc;
-      font-size: 3.5em;
-      margin-bottom: 15px;
+      font-size: 3.8em;
+      margin-bottom: 30px;
       font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    h2 {
+      color: #00aaff;
+      font-weight: 700;
+      margin-top: 50px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 6px;
+      letter-spacing: 0.05em;
     }
     p {
-      font-size: 1.3em;
-      margin-bottom: 40px;
-      line-height: 1.5;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+      font-size: 1.2em;
+      margin-bottom: 25px;
       font-weight: 500;
+      text-align: justify;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 50px;
     }
     button {
       background-color: #007acc;
       border: none;
       color: #fff;
-      padding: 18px 40px;
-      font-size: 1.3em;
+      padding: 20px 50px;
+      font-size: 1.4em;
       cursor: pointer;
-      border-radius: 7px;
+      border-radius: 8px;
       transition: background-color 0.3s ease;
-      font-weight: 600;
-      letter-spacing: 0.05em;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      box-shadow: 0 0 12px #00aaff;
     }
     button:hover {
       background-color: #005f99;
+      box-shadow: 0 0 18px #0088cc;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 40px 20px;
+      }
+      h1 {
+        font-size: 2.8em;
+      }
+      button {
+        padding: 15px 35px;
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
 <body>
   <h1>MONARCH-DATABASE</h1>
+
+  <h2>Présentation du Projet MONARCH</h2>
   <p>
-    Bienvenue sur la base de données centralisée de MONARCH, l'organisation scientifique d'élite dédiée à l'identification, au suivi et à l'analyse des entités Kaiju à l'échelle mondiale.
+    MONARCH est une organisation scientifique internationale d’élite, chargée de la surveillance, du recensement et de l’étude exhaustive des entités Kaiju à l’échelle mondiale.
+    Fondée en réponse à l’émergence accrue de phénomènes biologiques anormaux, MONARCH coordonne la collecte, l’analyse et la sécurisation des données critiques concernant ces créatures titanesques.
   </p>
+
+  <h2>Objectifs Stratégiques</h2>
   <p>
-    Ce portail sécurisé offre un accès contrôlé aux dossiers scientifiques complets, comprenant des données biologiques, comportementales et géolocalisées des créatures recensées, ainsi qu’à des ressources multimédias associées.
+    Le projet vise à centraliser et structurer des informations multidisciplinaires — biologiques, écologiques, géologiques et comportementales — afin d’appuyer les décisions stratégiques des autorités civiles et militaires.
+    MONARCH promeut une recherche intégrée, exploitant les technologies de pointe pour anticiper les risques et développer des réponses adaptées aux menaces Kaiju.
   </p>
-  <button onclick="location.href='home2.html'">Accéder au portail sécurisé</button>
+
+  <h2>Cadre Opérationnel</h2>
+  <p>
+    Grâce à un réseau mondial de laboratoires, d’unités mobiles et de bases avancées, MONARCH déploie des équipes mixtes composées de scientifiques spécialisés et de personnels militaires hautement qualifiés.
+    Un système rigoureux de classification et de niveaux de sécurité assure la gestion stricte des informations sensibles, accessible uniquement aux personnels autorisés selon leur habilitation.
+  </p>
+
+  <div class="button-container">
+    <button onclick="location.href='home2.html'">Accéder au portail sécurisé</button>
+  </div>
 </body>
 </html>
